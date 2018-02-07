@@ -17,8 +17,9 @@ var express      =  require("express"),
 var commentRoutes=require("./routes/comments"),
     campgroundRoutes=require("./routes/campgrounds"),
     indexRoutes      =require("./routes/index");
-//MOngo config 
-mongoose.connect("mongodb://localhost/yelp_camp");
+//Mongo config 
+// mongoose.connect("mongodb://localhost/yelp_camp");
+mongoose.connect("mongodb://vamshi:girikala@ds229468.mlab.com:29468/yelpcamp");
 //APP CONFIG
 app.set("view engine","ejs");
 app.use(flash());
